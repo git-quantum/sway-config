@@ -1,0 +1,6 @@
+#Keybinding
+bindsym Mod4+o exec ~/.scripts/volume.sh 
+#bindsym XF86AudioRaiseVolume exec ~/.scripts/volume.sh +
+bindsym Mod4+i exec ~/.scripts/volume.sh +
+#bindsym XF86AudioLowerVolume exec ~/.scripts/volume.sh -
+bindsym Mod4+p exec ~/.scripts/volume.sh -
