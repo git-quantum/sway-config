@@ -2,7 +2,7 @@
 
 
 Dependencies:
-autotiling: https://pypi.org/project/autotiling/1.8/#files
+/rautotiling: https://pypi.org/project/autotiling/1.8/#files
 static roboto mono font: https://fonts.google.com/specimen/Roboto+Mono
 flashfocus: https://github.com/fennerm/flashfocus
 snapper
