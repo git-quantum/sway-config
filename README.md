@@ -6,6 +6,7 @@
 ### static roboto mono font: https://fonts.google.com/specimen/Roboto+Mono
 ### flashfocus: https://github.com/fennerm/flashfocus
 ### snapper
+### awesome font
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
