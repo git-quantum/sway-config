@@ -17,3 +17,18 @@
 ##### Font cheatsheet: https://fontawesome.com/v5/cheatsheet
 ##### Setup btrfs F38: https://sysguides.com/install-fedora-38-with-snapshot-and-rollback-support/#2-3-create-the-additional-subvolumes
 ##### Manjaro waybar module: https://gitlab.manjaro.org/manjaro-arm/applications/arm-profiles/-/blob/master/overlays/sway/etc/skel/.config/waybar/config
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Gaming setup:<br />
+##### 1) Install Steam
+######  - Add third party repo: # dnf install fedora-workstation-repositories-38-2.fc38.x86_64
+######  - Install the app: # dnf install steam
+##### 2) Install gamescope
+######  - Install the app: # dnf install gamescope
+##### 3) Install goverlay (mangohud included as a dependency)
+######  - Install the app: # dnf install goverlay
+##### 4) Install gamemode (32 and 64bits version)
+######  - Install both apps: # dnf install gamemode.x86_64 gamemode.i686
+##### 5) Set games launch options:
+######  - Add this line: gamescope -w 1706 -h 960 -W 2560 -H 1440 -U -f -e -- mangohud gamemoderun %command%
