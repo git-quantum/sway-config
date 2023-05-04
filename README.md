@@ -32,3 +32,11 @@
 ######  - Install both apps: # dnf install gamemode.x86_64 gamemode.i686
 ##### 5) Set games launch options:
 ######  - Add this line: gamescope -w 1706 -h 960 -W 2560 -H 1440 -U -f -e -- mangohud gamemoderun %command%
+
+### Troubleshoot known issue:
+##### Sometimes, the game is stuck during the launch (and it becomes impossible to launch it again without few manipulation). In this case, instead of reboot or logout, try these following workaround:
+###### > Kill every pid w/ this command: # ps -ef | grep gamescope
+###### > Kill every pid w/ this command: # ps -ef | grep -i "game_name"
+###### > Kill every pid w/ this command: # ps -ef | grep gamemode
+
+
