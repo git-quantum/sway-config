@@ -35,8 +35,9 @@
 
 ### Troubleshoot known issue:
 ##### Sometimes, the game is stuck during the launch (and it becomes impossible to launch it again without few manipulation). In this case, instead of reboot or logout, try these following workaround:
-###### > Kill every pid w/ this command: # ps -ef | grep gamescope
+###### > Kill every pid w/ this command: # ps -ef | grep -i gamescope
 ###### > Kill every pid w/ this command: # ps -ef | grep -i "game_name"
-###### > Kill every pid w/ this command: # ps -ef | grep gamemode
+###### > Kill every pid w/ this command: # ps -ef | grep -i gamemode
+###### > Kill every pid w/ this command: # ps -ef | grep -i proton (seems to be better than the previous command) 
 
 
