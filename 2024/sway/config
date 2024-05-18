@@ -1,6 +1,13 @@
 # STARTUP
+# Animation
 exec_always --no-startup-id $HOME/.config/sway/sway-venv/bin/flashfocus
+
+# Setup vars Env
 exec_always $HOME/scripts/pre-sway.sh
+
+# Notification Daemon
+exec swaync
+
 
 # MISC
 # Disable window titlebar
@@ -14,6 +21,8 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
 # Workaround for POE Awakened
 for_window [class="awakened-poe-trade"] floating enable
 
+# Flameshot
+for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
 
 
 # FONTS
@@ -97,6 +106,11 @@ input "type:pointer" accel_profile flat
 #
 bindsym $mod+p grimshot copy area
  
+#
+# Toggle control center
+#
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
 #
 # Moving around:
 #
