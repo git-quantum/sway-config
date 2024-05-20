@@ -1,9 +1,10 @@
 # STARTUP
 # Animation
-exec_always --no-startup-id $HOME/.config/sway/sway-venv/bin/flashfocus
+exec_always --no-startup-id flashfocus 
+exec_always --no-startup-id autotiling
 
 # Setup vars Env
-exec_always $HOME/scripts/pre-sway.sh
+#exec_always $HOME/scripts/pre-sway.sh
 
 # Notification Daemon
 exec swaync
