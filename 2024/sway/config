@@ -47,15 +47,15 @@ set $term foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 
-# Call Wofi and prevent overlapping
-set $menu "pgrep -x wofi >/dev/null 2>&1 || wofi --dmenu --show drun"
+# Toggle Wofi and prevent overlapping
+set $menu "pgrep -x wofi >/dev/null 2>&1 && killall wofi || wofi --dmenu --show drun"
 
 include /etc/sway/config-vars.d/*
 
 # OUTPUT CONFIGURATION
 # Wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /$HOME/.config/sway/wallpaper.jpg fill
+output * bg /$HOME/.config/sway/bg6.jpg fill
 
 # Resolution
 # Get your outputs by running: swaymsg -t get_outputs
